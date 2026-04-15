@@ -11,7 +11,7 @@ from agent.prompts import SYSTEM_PROMPT
 from agent.tool_handlers import dispatch_tool
 from agent.tools import TOOLS
 
-MODEL = "claude-sonnet-4-6"
+MODEL = "claude-haiku-4-5-20251001"
 
 MAX_ITERATIONS = 10
 
