@@ -9,7 +9,7 @@ The tool uses Claude as an AI agent to:
 1. Geocode your starting location into coordinates
 2. Generate a circular route at your target distance using OpenRouteService
 3. Check the actual distance and retry with different route variations if needed
-4. Render an interactive HTML map and export a GPX file
+4. Render an interactive HTML map using Thunderforest Outdoors tiles (terrain, trails, contours) and export a GPX file
 
 ## Prerequisites
 
