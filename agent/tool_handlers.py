@@ -14,6 +14,7 @@ from jinja2 import Environment, FileSystemLoader
 
 ORS_API_KEY = os.environ.get("ORS_API_KEY", "")
 ORS_BASE = "https://api.openrouteservice.org"
+THUNDERFOREST_API_KEY = os.environ.get("THUNDERFOREST_API_KEY", "")
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = PROJECT_ROOT / "templates"
@@ -193,6 +194,7 @@ def render_route_map(
         location_name=location_name,
         elevation_gain_m=elevation_gain_m or "N/A",
         estimated_duration=estimated_duration,
+        thunderforest_api_key=THUNDERFOREST_API_KEY,
     )
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

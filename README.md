@@ -16,6 +16,7 @@ The tool uses Claude as an AI agent to:
 - Python 3.10+
 - An Anthropic API key
 - An OpenRouteService API key
+- A Thunderforest API key
 
 ## API key setup
 
@@ -33,6 +34,14 @@ OpenRouteService provides the routing engine that generates the actual road/path
 2. From your dashboard, go to **API Keys** and create a new token
 3. The free tier allows 2,000 requests/day which is more than enough for personal use
 
+### Thunderforest API key
+
+Thunderforest provides the map tiles using their Outdoors style, which shows terrain, trails, and contours — great for running route planning.
+
+1. Go to [thunderforest.com](https://www.thunderforest.com) and create a free account (no credit card required)
+2. From your dashboard, create a new project to get an API key
+3. The free tier allows 150,000 tile requests/month
+
 ### Configure your keys
 
 Copy the example env file and fill in your keys:
@@ -46,6 +55,7 @@ Edit `.env`:
 ```
 ANTHROPIC_API_KEY=sk-ant-...
 ORS_API_KEY=your-openrouteservice-key
+THUNDERFOREST_API_KEY=your-thunderforest-key
 ```
 
 ## Installation
